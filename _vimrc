@@ -24,7 +24,7 @@ set nocompatible
 set noswapfile
 set number
 set ruler
-set shiftwidth=4
-set ts=4
+set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+set guifont=Consolas:h16:b:cANSI:qDRAFT
 
 syntax on
