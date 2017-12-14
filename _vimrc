@@ -5,7 +5,7 @@ filetype plugin on
 highlight Search guibg=lightblue
 
 iabbrev r; return
-inoremap <leader>; <esc>
+iabbrev f function(
 
 let mapleader=" "
 
@@ -15,8 +15,9 @@ nnoremap <leader>yfn 	:let @* = expand("%")<cr>
 nnoremap <leader>gf	:vertical wincmd f<CR>
 
 set backspace=indent,eol,start
+set guifont=Lucida_Console:h14:b:cANSI
 set hlsearch
-set ignorecase
+set ignorecase smartcase
 set makeprg=msbuild.exe
 set nowrap
 set nobackup
@@ -24,7 +25,7 @@ set nocompatible
 set noswapfile
 set number
 set ruler
-set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
-set guifont=Consolas:h16:b:cANSI:qDRAFT
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+set autoindent
 
 syntax on
